@@ -4,7 +4,6 @@ import userEvent from '@testing-library/user-event';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import App from '../App';
-// import { Pokedex } from '../pages';
 
 const renderWithRouter = (component) => {
   const history = createMemoryHistory();
@@ -46,5 +45,4 @@ it('tem um botão All', () => {
   const btnAll = screen.getByRole('button', { name: 'All' });
   expect(btnAll).toBeInTheDocument();
   userEvent.click(btnAll);
-
 });
