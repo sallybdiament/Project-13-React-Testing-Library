@@ -1,10 +1,10 @@
 import React from 'react';
 import { screen, render } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+// import userEvent from '@testing-library/user-event';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import App from '../App';
-import { Pokedex } from '../pages';
+// import { Pokedex } from '../pages';
 
 const renderWithRouter = (component) => {
   const history = createMemoryHistory();
@@ -25,3 +25,5 @@ test('é exibido o próximo pokémon quando o botão Próximo pokémon é clicad
   expect(btnNextPokemon).toBeInTheDocument();
   // userEvent.click(btnNextPokemon);
 });
+
+it('');
