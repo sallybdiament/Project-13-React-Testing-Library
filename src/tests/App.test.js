@@ -17,6 +17,7 @@ test('O primeiro link deve possuir o texto Home', () => {
   const homeTitle = screen.getByRole('link', { name: 'Home' });
   expect(homeTitle).toBeInTheDocument();
 });
+
 test('O primeiro link deve renderizar a página ./', () => {
   const { history } = renderWithRouter(<App />);
   const homeTitle = screen.getByRole('link', { name: 'Home' });
